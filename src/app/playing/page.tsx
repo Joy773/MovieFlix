@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 export default async function NowPlayingPage() {
-  const movies = await getNowPlayingMovies(1);
+  const movies = (await getNowPlayingMovies(1)) ?? [];
   const featuredMovie = movies?.[0];
 
   const fetchMoreMovies = async (page: number): Promise<Movie[]> => {

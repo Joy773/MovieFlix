@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 export default async function TopRatedPage() {
-  const movies = await getTopRatedMovies(1);
+  const movies = (await getTopRatedMovies(1)) ?? [];
   const featuredMovie = movies?.[0];
 
   return (

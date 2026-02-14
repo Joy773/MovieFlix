@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 export default async function UpcomingPage() {
-  const movies = await getUpcomingMovies(1);
+  const movies = (await getUpcomingMovies(1)) ?? [];
   const featuredMovie = movies?.[0];
 
   return (

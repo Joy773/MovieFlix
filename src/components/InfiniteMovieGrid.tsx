@@ -17,7 +17,7 @@ const InfiniteMovieGrid = ({
   initialMovies,
   endpoint,
 }: InfiniteMovieGridProps) => {
-  const [movies, setMovies] = useState<Movie[]>(initialMovies);
+  const [movies, setMovies] = useState<Movie[]>(initialMovies ?? []);
   const [page, setPage] = useState(2);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);

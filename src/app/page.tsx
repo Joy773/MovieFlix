@@ -14,10 +14,10 @@ import {
 } from "@/lib/getMovies";
 
 export default async function Home() {
-  const nowPlayingMovies = await getNowPlayingMovies();
-  const upcomingMovies = await getUpcomingMovies();
-  const topRatedMovies = await getTopRatedMovies();
-  const popularMovies = await getPopularMovies();
+  const nowPlayingMovies = (await getNowPlayingMovies()) ?? [];
+  const upcomingMovies = (await getUpcomingMovies()) ?? [];
+  const topRatedMovies = (await getTopRatedMovies()) ?? [];
+  const popularMovies = (await getPopularMovies()) ?? [];
 
   return (
     <main className="min-h-screen bg-black relative overflow-hidden">

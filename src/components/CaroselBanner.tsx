@@ -7,7 +7,7 @@ interface Props {
 }
 
 const CaroselBanner = async ({ id, keywords }: Props) => {
-  const movies = await getDiscoverMovies(id, keywords);
+  const movies = (await getDiscoverMovies(id, keywords)) ?? [];
 
   return <HeroCarousel movies={movies} />;
 };

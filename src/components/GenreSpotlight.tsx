@@ -20,9 +20,11 @@ const GenreSpotlight = ({
   movies,
   genreId,
 }: GenreSpotlightProps) => {
-  const spotlightMovies = movies.slice(0, 4);
+  const spotlightMovies = (movies ?? []).slice(0, 4);
   const mainMovie = spotlightMovies[0];
   const sideMovies = spotlightMovies.slice(1, 4);
+
+  if (!mainMovie) return null;
 
   return (
     <section className="container mx-auto px-4 md:px-6 py-12">
