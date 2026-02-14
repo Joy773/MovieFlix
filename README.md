@@ -106,3 +106,4 @@ To know more about licensing options, visit: [https://www.reactbd.com/license](h
 If you find this project helpful, consider supporting us!
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/reactbd)
+# MovieFlix
