@@ -67,7 +67,7 @@ const ViewMorePage = async (props: Props) => {
     categoryConfig[title as keyof typeof categoryConfig] ||
     categoryConfig["Popular"];
 
-  const movies = await config.fetchFunction(1);
+  const movies = (await config.fetchFunction(1)) ?? [];
   const featuredMovie = movies?.[0];
   const Icon = config.icon;
 
@@ -141,7 +141,7 @@ const ViewMorePage = async (props: Props) => {
 
       {/* Movies Grid with Infinite Scroll */}
       <div className="container mx-auto px-4 md:px-6 py-12">
-        <InfiniteMovieGrid initialMovies={movies} endpoint={config.endpoint} />
+        <InfiniteMovieGrid initialMovies={movies ?? []} endpoint={config.endpoint} />
       </div>
     </main>
   );

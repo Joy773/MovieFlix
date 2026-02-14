@@ -77,7 +77,7 @@ const InfiniteMovieGrid = ({
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {movies.map((movie) => (
+        {(movies ?? []).map((movie) => (
           <Link
             key={`${movie.id}-${movie.title}`}
             href={`/movie/${movie.id}`}

@@ -86,7 +86,7 @@ export default async function PopularPage() {
       {/* Movies Grid with Infinite Scroll */}
       <div className="container mx-auto px-4 md:px-6 py-12">
         <InfiniteMovieGrid
-          initialMovies={movies}
+          initialMovies={movies ?? []}
           endpoint="/api/movies/popular"
         />
       </div>
