@@ -7,7 +7,6 @@ Follow this guide to set up the **Movie Studio** project on your local machine.
 Ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (Version 18 or higher)
-- [pnpm](https://pnpm.io/) (Recommended package manager)
 
 ## Installation
 
@@ -20,11 +19,7 @@ Ensure you have the following installed:
 
 2.  **Install Dependencies:**
     ```bash
-    pnpm install
-    # or
     npm install
-    # or
-    yarn install
     ```
 
 ## Environment Variables
@@ -57,7 +52,7 @@ This project requires API keys from [The Movie Database (TMDB)](https://www.them
 To start the application in development mode with hot-reloading:
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
@@ -67,13 +62,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 To create an optimized production build:
 
 ```bash
-pnpm build
+npm run build
 ```
 
 To start the production server:
 
 ```bash
-pnpm start
+npm start
 ```
 
 ## Troubleshooting

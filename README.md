@@ -33,12 +33,12 @@ To get started with the project locally, follow these steps:
 1.  **Clone the repository**
 2.  **Install dependencies**:
     ```bash
-    pnpm install
+    npm install
     ```
 3.  **Set up environment variables** (see [Environment Variables](#-environment-variables) below)
 4.  **Run the development server**:
     ```bash
-    pnpm dev
+    npm run dev
     ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
